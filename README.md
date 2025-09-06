@@ -1,48 +1,81 @@
-# Introduction
-This dataset captures the global migration of students pursuing higher education from 2019 to 2023, including their countries of origin, destinations, universities, courses, placement outcomes, and more. It covers 10 major destination countries with realistic mappings of top universities and cities and reflecting trends. 
 
-# Background
 
- To analyze global student migration trends, scholarship distribution, university choice, and job placements, with a focus on factors such as field of study, country of origin, and language proficiency.
-Migration Patterns;Determine which countries are the most popular for students to migrate to.
- Identify trends in student migration based on origin and destination countries/cities,Scholarships and Enrollment.
- Analyze the relationship between scholarships and student enrollment. Investigate the reasons students migrate, including higher rankings, job opportunities, scholarships, etc.
+# 🌍 Global Student Migration Analysis (2019–2023)
 
-# Tools Used
-             Purpose	                     Tools/Tech Used
-      Data Cleaning & Sorting	                  Excel
-      Dashboard & Visualization	                Power BI
-      Presentation	                            Powerpoint    
+# 📖 Project Overview
+This project explores global student migration trends between 2019 and 2023, focusing on factors such as destination countries, scholarships, academic performance, and career outcomes. The dataset covers 5,000 students from diverse origin countries migrating to 10 major destination countries, along with their universities, fields of study, scholarships, placements, and salaries.
 
-# Methodology/Tools
-Steps: Convert From CSVfiles → Clean 
- Excel:helper columns using IF and nested IF;
-Scholarflag=IF([@scholarship_received]="Yes",1,0)
-Placement Success=IF([@placement_status]="Placed","Successful","Unsuccessful")
-Salary Category (nested IF)=IF([@starting_salary_usd]=0,"Unemployed",IF([@starting_salary_usd]<30000,"Low",IF([@starting_salary_usd]<60000,"Medium","High")))
-Performance Level (Based on GPA)=IF([@gpa_or_score]>=3.5,"Excellent",IF([@gpa_or_score]>=3.0,"Good",IF([@gpa_or_score]>=2.0,"Average","Poor")))
+The analysis was conducted using Excel (data cleaning, transformations, and formula-based feature creation) and Power BI (interactive dashboards, KPIs, and storytelling visualizations).
 
- # Power BI = Visualization + KPI dashboard 
-      # Visual Title                                   Type                                Description
-Placement Rate by Destination                       Ribbon Chart                        %GT Placement Rate by destination_country
-Top 10 Destination Countries                        Line & Stacked Chart                Total Students by destination_country  
-Global Student Migration Insights Dashboard         Cards & Charts                       Dashboard
+# 🎯 Goal & Objectives
+Goal: To analyze global student migration trends, scholarship distribution, university choices, and post-graduation job placements.
 
-# Conclusion
-The analysis of global student migration reveals clear patterns in destinations, fields of study, and career outcomes.
-Top destinations like the USA, UK, Canada, and Germany continue to attract the majority of students.
-STEM and Business fields dominate enrollment, reflecting global job market demand.
-Scholarships and higher GPA significantly improve placement success and starting salaries.
-Post-graduation outcomes show that academic performance, financial support, and visa opportunities are key drivers of employability.
+Objectives:
 
-# Recommendation
-Focus recruitment in top destinations and fields with higher placement/salaries.
+Identify the most popular destination countries and universities.
+
+Examine the relationship between scholarships and enrollment.
+
+Evaluate placement success rates and average salaries by destination.
+
+Understand how GPA, scholarships, and visa policies affect employability.
+
+Highlight the role of field of study (STEM, Business, etc.) in migration choices.
+
+# 🛠️ Methodology & Tools
+Excel (Data Preparation):
+
+Applied formulas (IF, nested IF) to derive new columns:
+
+ScholarFlag (Scholarship received → 1/0)
+
+Placement Success (Placed → Successful/Unsuccessful)
+
+Salary Category (Unemployed / Low / Medium / High)
+
+Performance Level (Excellent / Good / Average / Poor based on GPA)
+
+Power BI (Visualization & Dashboard):
+
+Built KPI cards for key outcomes: Total Students, Graduation Rate, Placement Rate, Average GPA, and Salary.
+
+Created charts (maps, bar, gauge, line) to visualize migration patterns, scholarship distribution, and job placements.
+
+Developed a storytelling dashboard showing the journey from enrollment → graduation → employment.
+
+# 📊 Key Insights
+Top Destination: UAE, followed by USA, UK, Canada, and Germany.
+
+Placement Success: Strongest in India, Canada, UK, and Ireland.
+
+Highest Salary: USA offers the best average starting salaries.
+
+Scholarships: 51.5% of students received scholarships, positively linked with placement success.
+
+Overall Placement Rate: 50.2% of students secured jobs.
+
+Fields of Study: STEM & Business dominate, aligning with global job market demand.
+
+# ✅ Recommendations
+Increase recruitment efforts in top destinations and high-salary fields.
+
 Expand scholarship programs where they correlate with higher placements.
-Strengthen language-test prep in regions with lower placement rates.
- Help shows which countries are most attrative for international students
-Helps universities & governments see demand pattern.
 
+Strengthen language preparation in regions with low placement rates.
 
+Use findings to guide universities, policymakers, and students in making data-driven migration decisions.
 
+# 🔑 Conclusion
+The analysis reveals that destination choice, academic performance, financial aid, and visa policies are the biggest drivers of student migration and employability. Using Excel and Power BI, this project highlights how data-driven insights can improve education and career planning on a global scale.
+
+# 📂 Project Info
+Dataset: global_student_migration (5,000 rows, 23 columns)
+Tools: Excel (data cleaning & transformation), Power BI (dashboard & visualization)
+Author: Ojutomori Kehinde Oyin
+
+# 📬 Contact
+LinkedIn: https://www.linkedin.com/in/kehinde-ojutomori-oyin 
+ Email:Kojutomori@gmail.com 
+GitHub: https://github.com/OJK-27
 
 
